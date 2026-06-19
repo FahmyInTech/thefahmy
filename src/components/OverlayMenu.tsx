@@ -21,6 +21,8 @@ export default function OverlayMenu() {
       document.body.style.overflow = "hidden";
       containerRef.current.style.pointerEvents = "all";
 
+      gsap.killTweensOf([bgRef.current, linksRef.current.querySelectorAll(".char"), footerRef.current]);
+
       const tl = gsap.timeline();
       
       // Federico style circular clip-path reveal
@@ -53,6 +55,8 @@ export default function OverlayMenu() {
     } else {
       document.body.style.overflow = "";
       
+      gsap.killTweensOf([bgRef.current, linksRef.current.querySelectorAll(".char"), footerRef.current]);
+
       const tl = gsap.timeline({
         onComplete: () => {
           if (containerRef.current) containerRef.current.style.pointerEvents = "none";
@@ -116,7 +120,7 @@ export default function OverlayMenu() {
           className="absolute inset-0 bg-[#060607] menu-overlay overflow-hidden"
         >
           {/* Massive Kinetic Background Marquee */}
-          <div className="absolute top-[20%] left-0 -translate-y-1/2 w-max -rotate-3 pointer-events-none opacity-[0.02] flex z-0 mix-blend-screen">
+          <div className="absolute top-[20%] left-0 -translate-y-1/2 w-max -rotate-3 pointer-events-none opacity-[0.06] flex z-0 mix-blend-screen">
             <span className="text-[25vw] md:text-[16vw] font-inter font-black uppercase tracking-tighter whitespace-nowrap animate-menu-marquee leading-none">
                FAHMY OMARA • FRONTEND ARCHITECT • FAHMY OMARA • FRONTEND ARCHITECT • 
             </span>
