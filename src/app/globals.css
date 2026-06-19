@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0c0c0d;
+  --foreground: #e4e4e6;
+  --accent: #2e6ff2; /* Federico Pian style blue, or a subtle metallic */
+  --accent-gold: #cfaa74;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* Custom Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body, a, button, input, textarea { cursor: auto; }
+  .cursor-dot, .cursor-ring { display: none !important; }
+}
+
+/* Lenis smooth scrolling config */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Clip-path for Federico style overlay */
+.menu-overlay {
+  clip-path: circle(0% at 100% 0%);
+  will-change: clip-path;
+}
