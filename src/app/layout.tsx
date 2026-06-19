@@ -12,8 +12,31 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Fahmy >_",
-  description: "Fahmy Omara — Creative Frontend Developer & Interactive Experiences.",
+  title: "Not Just a Portfolio. An Interactive Manifesto.",
+  description: "Code is poetry meant to be felt. Step into my digital sandbox where high-performance physics, GSAP animations, and strict architectural grids merge into one seamless experience.",
+  metadataBase: new URL("https://thefahmy.vercel.app"),
+  openGraph: {
+    title: "Not Just a Portfolio. An Interactive Manifesto.",
+    description: "Code is poetry meant to be felt. Step into my digital sandbox where high-performance physics, GSAP animations, and strict architectural grids merge into one seamless experience.",
+    url: "https://thefahmy.vercel.app",
+    siteName: "Fahmy Omara Portfolio",
+    images: [
+      {
+        url: "/images/portrait.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fahmy Omara - Frontend Architect",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Not Just a Portfolio. An Interactive Manifesto.",
+    description: "Code is poetry meant to be felt. Step into my digital sandbox where high-performance physics, GSAP animations, and strict architectural grids merge.",
+    images: ["/images/portrait.jpeg"],
+  },
 };
 
 export default function RootLayout({
