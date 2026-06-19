@@ -55,13 +55,42 @@ export default function AsciiPortrait({ src = "https://res.cloudinary.com/dgqequ
       offCanvas.width = cols;
       offCanvas.height = rows;
 
-      // Draw image to offscreen canvas
-      offCtx.drawImage(img, 0, 0, cols, rows);
-      const imgData = offCtx.getImageData(0, 0, cols, rows).data;
+      const updateImgData = (w: number, h: number) => {
+        const canvasAspect = w / h;
+        const imgAspect = img.width / img.height;
+
+        let sx = 0, sy = 0, sWidth = img.width, sHeight = img.height;
+
+        if (canvasAspect > imgAspect) {
+          // Canvas is wider than image. Crop top/bottom.
+          sWidth = img.width;
+          sHeight = img.width / canvasAspect;
+          sy = (img.height - sHeight) / 2;
+        } else {
+          // Canvas is taller than image. Crop sides.
+          sHeight = img.height;
+          sWidth = img.height * canvasAspect;
+          sx = (img.width - sWidth) / 2;
+        }
+
+        offCtx.clearRect(0, 0, cols, rows);
+        offCtx.drawImage(img, sx, sy, sWidth, sHeight, 0, 0, cols, rows);
+        return offCtx.getImageData(0, 0, cols, rows).data;
+      };
+
+      let currentImgData: Uint8ClampedArray | null = null;
+      let lastW = 0;
+      let lastH = 0;
 
       const render = () => {
         const dims = renderCanvas();
         if (!dims) return;
+        
+        if (dims.w !== lastW || dims.h !== lastH || !currentImgData) {
+          currentImgData = updateImgData(dims.w, dims.h);
+          lastW = dims.w;
+          lastH = dims.h;
+        }
         
         ctx.clearRect(0, 0, dims.w, dims.h);
         
@@ -76,10 +105,10 @@ export default function AsciiPortrait({ src = "https://res.cloudinary.com/dgqequ
         for (let y = 0; y < rows; y++) {
           for (let x = 0; x < cols; x++) {
             const i = (y * cols + x) * 4;
-            const r = imgData[i];
-            const g = imgData[i + 1];
-            const b = imgData[i + 2];
-            const a = imgData[i + 3];
+            const r = currentImgData[i];
+            const g = currentImgData[i + 1];
+            const b = currentImgData[i + 2];
+            const a = currentImgData[i + 3];
 
             if (a < 10) continue; // Skip transparent pixels
 

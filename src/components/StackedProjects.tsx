@@ -69,7 +69,7 @@ export default function StackedProjects() {
                         <span className="font-mono text-xs text-[#a0a0a0]">{project.metadata.year}</span>
                       </div>
                       
-                      <h3 className="font-inter text-[5rem] font-bold uppercase tracking-tighter leading-[0.9]">
+                      <h3 className="font-inter text-[5rem] font-bold uppercase tracking-tighter leading-[1.1]">
                         {project.title}
                       </h3>
                       
@@ -145,7 +145,7 @@ export default function StackedProjects() {
                         <span className="font-mono text-[10px] text-[#a0a0a0]">{project.metadata.year}</span>
                       </div>
                       
-                      <h3 className="font-inter text-5xl font-bold uppercase tracking-tighter leading-[0.9] text-white drop-shadow-2xl">
+                      <h3 className="font-inter text-5xl font-bold uppercase tracking-tighter leading-[1.1] text-white drop-shadow-2xl">
                         {project.title}
                       </h3>
                       
