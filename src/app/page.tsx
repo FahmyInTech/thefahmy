@@ -12,19 +12,29 @@ const KHAMSAT_TESTIMONIALS = [
     name: "Khaled F.", 
     role: "Client", 
     text: "شاب خلوق ومحترف، أنجز المطلوب بدقة واحترافية عالية تفوق التوقعات. من النادر أن تجد في هذا الزمن من يجمع بين الرقي في التعامل والتميز في الأداء التقني. شكراً جزيلاً أستاذ فهمي، وأتمنى لك دوام التوفيق.",
-    rating: 5
+    rating: 5,
+    source: "Khamsat Client"
   },
   { 
     name: "Ahmed A.", 
     role: "Client", 
     text: "هذا ثاني تعامل لي مع الفنان الأستاذ فهمي. وهو يستحق لقب الأستاذية بجدارة. لن اكثر في الإطراء، ولكن لكل من يبحث عن التميز في عالم شديد التنافسية فسيجده لدى هذا الفنان.",
-    rating: 5
+    rating: 5,
+    source: "Khamsat Client"
   },
   { 
     name: "Fadia A.", 
     role: "Client", 
     text: "I had a great experience working with him! He created a well-designed and professional portfolio for me. He was very helpful, responsive, and easy to work with. Highly recommended.",
-    rating: 5
+    rating: 5,
+    source: "Khamsat Client"
+  },
+  { 
+    name: "Sara A.", 
+    role: "Client", 
+    text: "يعطيك الف عافية، وبصراحة النتيجة كانت فوق توقعاتي بكثير. أشكرك على سعة صدرك وتحملك لكثرة التعديلات، وعلى المقترحات الجميلة اللي أضفتها للموقع واللي خلت النتيجة أفضل مما كنت متخيلة. الله يوفقك ويبارك لك في عملك، وتستاهل كل خير",
+    rating: 5,
+    source: "Fahmify Client"
   }
 ];
 
@@ -72,16 +82,16 @@ export default function Home() {
           <h2 className="text-sm font-mono text-[#a0a0a0] uppercase tracking-widest mb-16 flex items-center gap-4">
             <span className="w-8 h-[1px] bg-white/30" /> Client Feedback
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {KHAMSAT_TESTIMONIALS.map((t, i) => (
-              <div key={i} className="testimonial-item p-10 bg-[#111317] border border-white/5 rounded-2xl flex flex-col justify-between" dir={i !== 2 ? "rtl" : "ltr"}>
-                <p className={`text-white/80 ${i !== 2 ? "text-xl leading-relaxed" : "font-inter leading-relaxed"} mb-8`}>
+              <div key={i} className="testimonial-item p-10 bg-[#111317] border border-white/5 rounded-2xl flex flex-col justify-between" dir={t.name === 'Fadia A.' ? "ltr" : "rtl"}>
+                <p className={`text-white/80 ${t.name === 'Fadia A.' ? "font-inter leading-relaxed" : "text-xl leading-relaxed"} mb-8`}>
                   "{t.text}"
                 </p>
                 <div className="flex items-center justify-between border-t border-white/10 pt-6">
                   <div>
                     <h4 className="text-white font-bold mb-1">{t.name}</h4>
-                    <span className="text-[#666] font-mono text-[10px] uppercase tracking-widest">Khamsat Client</span>
+                    <span className="text-[#666] font-mono text-[10px] uppercase tracking-widest">{t.source}</span>
                   </div>
                   <div className="flex gap-1">
                     {[...Array(t.rating)].map((_, j) => (
