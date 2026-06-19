@@ -37,11 +37,11 @@ export default function HeroText() {
   }, []);
 
   return (
-    <section ref={containerRef} id="hero" className="relative w-full min-h-[100dvh] flex flex-col justify-start md:justify-center px-6 md:px-16 pt-32 md:pt-24 pb-12 overflow-hidden">
+    <section ref={containerRef} id="hero" className="relative w-full min-h-[100dvh] flex flex-col justify-center items-center md:items-start px-6 md:px-16 pt-20 md:pt-24 pb-20 md:pb-12 overflow-hidden">
       
       {/* Interactive ASCII Portrait Background */}
-      <div className="absolute bottom-12 md:top-1/2 left-0 right-0 md:left-auto md:right-0 md:-translate-y-1/2 h-[45vh] md:h-[90vh] md:w-[50vw] z-0 opacity-40 md:opacity-80 pointer-events-auto overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-end pb-[15vh] md:pb-0 md:items-center justify-center md:justify-end md:right-0 opacity-40 md:opacity-80 pointer-events-none z-0">
+        <div className="w-[120vw] h-[60vh] md:w-[50vw] md:h-[90vh] relative">
           <AsciiPortrait />
         </div>
       </div>
