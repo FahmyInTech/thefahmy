@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Not Just a Portfolio. An Interactive Manifesto.",
-  description: "Code is poetry meant to be felt. Step into my digital sandbox where high-performance physics, GSAP animations, and strict architectural grids merge into one seamless experience.",
+  title: "Fahmy >_",
+  description: "Fahmy Omara — Creative Frontend Developer & Interactive Experiences.",
   metadataBase: new URL("https://thefahmy.vercel.app"),
   openGraph: {
     title: "Not Just a Portfolio. An Interactive Manifesto.",
