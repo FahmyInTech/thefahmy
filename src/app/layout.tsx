@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     siteName: "Fahmy Omara Portfolio",
     images: [
       {
-        url: "/images/portrait.jpeg",
+        url: "/images/hero-og.png",
         width: 1200,
         height: 630,
-        alt: "Fahmy Omara - Frontend Architect",
+        alt: "Fahmy Omara - Frontend Architect Hero Section",
       },
     ],
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Not Just a Portfolio. An Interactive Manifesto.",
     description: "Code is poetry meant to be felt. Step into my digital sandbox where high-performance physics, GSAP animations, and strict architectural grids merge.",
-    images: ["/images/portrait.jpeg"],
+    images: ["/images/hero-og.png"],
   },
 };
 
