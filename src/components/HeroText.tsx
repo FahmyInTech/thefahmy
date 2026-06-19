@@ -40,7 +40,7 @@ export default function HeroText() {
     <section ref={containerRef} id="hero" className="relative w-full min-h-[100dvh] flex flex-col justify-start md:justify-center px-6 md:px-16 pt-20 md:pt-24 pb-12 overflow-hidden">
       
       {/* Interactive ASCII Portrait Background */}
-      <div className="absolute bottom-0 md:top-1/2 left-0 right-0 md:left-auto md:right-0 md:-translate-y-1/2 h-[45vh] md:h-[90vh] md:w-[50vw] z-0 opacity-40 md:opacity-80 pointer-events-auto overflow-hidden pointer-events-none">
+      <div className="absolute bottom-0 md:top-1/2 left-0 right-0 md:left-auto md:right-0 md:-translate-y-1/2 h-[45vh] md:h-[90vh] md:w-[50vw] z-0 opacity-60 md:opacity-100 pointer-events-auto overflow-hidden pointer-events-none">
         <div className="absolute inset-0 flex items-center justify-center">
           <AsciiPortrait />
         </div>

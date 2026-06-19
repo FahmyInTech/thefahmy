@@ -72,7 +72,7 @@ export default async function ProjectCaseStudyPage({
         {/* The Challenge Card */}
         <div className="sticky top-24 md:relative md:grid md:grid-cols-12 md:gap-8 bg-[#0c0c0d] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_20px_50px_rgba(0,0,0,0.8)] md:shadow-none border border-white/10 md:border-none z-10 min-h-[50vh] md:min-h-0 flex flex-col justify-center mb-8 md:mb-0">
           {/* Editorial Background Number */}
-          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[12rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">01</div>
+          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">01</div>
 
           <div className="md:col-span-4 relative z-10">
             <div className="relative">
@@ -94,7 +94,7 @@ export default async function ProjectCaseStudyPage({
         {/* The Solution Card */}
         <div className="sticky top-28 md:relative md:grid md:grid-cols-12 md:gap-8 bg-[#080809] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_-20px_50px_rgba(0,0,0,0.9)] md:shadow-none border border-white/10 md:border-none z-20 min-h-[60vh] md:min-h-0 flex flex-col justify-center">
           {/* Editorial Background Number */}
-          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[12rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">02</div>
+          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">02</div>
 
           <div className="md:col-span-4 relative z-10">
             <div className="relative">
