@@ -9,7 +9,7 @@ export default function KineticAbout() {
   const blobRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
 
-  const text = "I engineer digital experiences that sit precisely at the intersection of stark minimalism and explosive interactive motion. I am currently scaling my logic toward full-stack architecture.";
+  const text = "Code, to me, is a craft. Every animation, every pixel, every interaction is built with intention. I partner with ambitious people and brands to turn their presence into something unforgettable.";
   const words = text.split(" ");
 
   useEffect(() => {

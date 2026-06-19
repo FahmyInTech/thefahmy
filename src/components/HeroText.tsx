@@ -71,7 +71,7 @@ export default function HeroText() {
         </h1>
         
         <p className="mt-6 font-mono text-sm md:text-base text-[#a0a0a0] max-w-md pl-0 md:pl-1 mx-auto md:mx-0 pointer-events-auto">
-          A frontend developer dedicated to designing and building sophisticated, high-performance web experiences.
+          Where bold identity meets flawless execution. I create interactive web experiences for individuals and brands who want to be seen, not scrolled past.
         </p>
       </div>
 
