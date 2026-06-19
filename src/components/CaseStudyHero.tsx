@@ -109,7 +109,7 @@ export default function CaseStudyHero({ project }: { project: ProjectCaseStudy }
           <span className="hero-reveal-text inline-block font-mono text-[10px] uppercase tracking-widest px-4 py-2 border border-white/20 rounded-full bg-black/40 backdrop-blur-xl text-white/90 shadow-2xl mb-4">
             {project.category}
           </span>
-          <h1 className="hero-reveal-text text-[3.5rem] sm:text-[4.5rem] font-inter font-bold tracking-tighter leading-[0.9] text-white drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] mix-blend-normal pb-2">
+          <h1 className="hero-reveal-text text-[3.5rem] sm:text-[4.5rem] font-inter font-bold tracking-tighter leading-[1.1] text-white drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] mix-blend-normal pb-2">
             {project.title}
           </h1>
         </div>
@@ -147,7 +147,7 @@ export default function CaseStudyHero({ project }: { project: ProjectCaseStudy }
           </span>
         </div>
         <div className="overflow-hidden">
-          <h1 className="hero-reveal-text text-[6rem] md:text-[8rem] lg:text-[10rem] font-inter font-bold tracking-tighter leading-[0.85] md:leading-[0.8] text-white">
+          <h1 className="hero-reveal-text text-[6rem] md:text-[8rem] lg:text-[10rem] font-inter font-bold tracking-tighter leading-[1.1] md:leading-none text-white">
             {project.title}
           </h1>
         </div>
