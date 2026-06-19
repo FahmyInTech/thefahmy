@@ -70,9 +70,9 @@ export default async function ProjectCaseStudyPage({
       <section className="py-16 md:py-32 px-4 md:px-16 max-w-7xl mx-auto relative">
         
         {/* The Challenge Card */}
-        <div className="relative md:grid md:grid-cols-12 md:gap-8 bg-[#0c0c0d] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_20px_50px_rgba(0,0,0,0.8)] md:shadow-none border border-white/10 md:border-none z-10 min-h-[50vh] md:min-h-0 flex flex-col justify-center mb-16 md:mb-0">
+        <div className="sticky top-24 md:relative md:grid md:grid-cols-12 md:gap-8 bg-[#0c0c0d] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_20px_50px_rgba(0,0,0,0.8)] md:shadow-none border border-white/10 md:border-none z-10 min-h-[50vh] md:min-h-0 flex flex-col justify-center mb-8 md:mb-0">
           {/* Editorial Background Number */}
-          <div className="absolute -top-4 -right-2 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.03] select-none pointer-events-none leading-none z-0">01</div>
+          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">01</div>
           
           <div className="md:col-span-4 relative z-10">
             <div className="relative">
@@ -82,7 +82,7 @@ export default async function ProjectCaseStudyPage({
               <h3 className="text-4xl sm:text-5xl md:text-5xl font-inter font-bold tracking-tighter leading-[1.1] text-white">Navigating the Complexity</h3>
             </div>
           </div>
-          <div className="md:col-span-7 md:col-start-6 relative z-10 mt-8 md:mt-0">
+          <div className="md:col-span-7 md:col-start-6 relative z-10 mt-8 md:mt-0 max-h-[45vh] md:max-h-none overflow-y-auto md:overflow-visible pr-2 md:pr-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             <p className="text-white/80 md:text-white/90 font-inter text-xl sm:text-2xl md:text-[1.75rem] leading-[1.8] md:leading-[1.6] font-light">
               {project.challenge}
             </p>
@@ -92,9 +92,9 @@ export default async function ProjectCaseStudyPage({
         <div className="hidden md:block w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent my-24 md:my-40" />
 
         {/* The Solution Card */}
-        <div className="relative md:grid md:grid-cols-12 md:gap-8 bg-[#080809] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_-20px_50px_rgba(0,0,0,0.9)] md:shadow-none border border-white/10 md:border-none z-20 min-h-[50vh] md:min-h-0 flex flex-col justify-center mb-8 md:mb-0">
+        <div className="sticky top-28 md:relative md:grid md:grid-cols-12 md:gap-8 bg-[#080809] md:bg-transparent rounded-[2rem] md:rounded-none p-8 md:p-0 shadow-[0_-20px_50px_rgba(0,0,0,0.9)] md:shadow-none border border-white/10 md:border-none z-20 min-h-[60vh] md:min-h-0 flex flex-col justify-center">
           {/* Editorial Background Number */}
-          <div className="absolute -top-4 -right-2 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.03] select-none pointer-events-none leading-none z-0">02</div>
+          <div className="absolute top-4 -right-4 md:-top-24 md:-left-12 text-[8rem] md:text-[20rem] font-bold font-inter text-white/[0.02] md:text-white/[0.03] select-none pointer-events-none leading-none z-0">02</div>
           
           <div className="md:col-span-4 relative z-10">
             <div className="relative">
@@ -104,7 +104,7 @@ export default async function ProjectCaseStudyPage({
               <h3 className="text-4xl sm:text-5xl md:text-5xl font-inter font-bold tracking-tighter leading-[1.1] text-white">Engineered for Impact</h3>
             </div>
           </div>
-          <div className="md:col-span-7 md:col-start-6 relative z-10 mt-8 md:mt-0">
+          <div className="md:col-span-7 md:col-start-6 relative z-10 mt-8 md:mt-0 max-h-[45vh] md:max-h-none overflow-y-auto md:overflow-visible pr-2 md:pr-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             <p className="text-white/80 md:text-white/90 font-inter text-xl sm:text-2xl md:text-[1.75rem] leading-[1.8] md:leading-[1.6] font-light mb-12 md:mb-16">
               {project.solution}
             </p>
