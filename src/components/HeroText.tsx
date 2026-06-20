@@ -102,13 +102,13 @@ export default function HeroText() {
         <FloatingBadge />
       </div> */}
 
-      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 max-w-7xl mx-auto w-full z-10 pointer-events-none mt-8 lg:mt-0 relative">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 max-w-7xl mx-auto w-full z-10 pointer-events-none mt-8 md:-mt-12 lg:mt-0 relative">
 
         <p ref={roleRef} className="font-mono text-xs uppercase tracking-widest text-[#a0a0a0] mb-6 pl-0 lg:pl-1 pointer-events-auto">
           Hello, I'm
         </p>
 
-        <h1 className="font-inter text-[15vw] md:text-[9rem] lg:text-[12rem] font-bold tracking-tighter leading-[0.85] uppercase text-white flex flex-col items-center lg:items-start pointer-events-auto mix-blend-difference relative z-20">
+        <h1 className="font-inter text-[15vw] lg:text-[12rem] font-bold tracking-tighter leading-[0.85] uppercase text-white flex flex-col items-center lg:items-start pointer-events-auto mix-blend-difference relative z-20">
           <span className="overflow-hidden block py-2">
             <span ref={text1Ref} className="block hero-line-inner origin-bottom lg:origin-bottom-left">
               Fahmy
