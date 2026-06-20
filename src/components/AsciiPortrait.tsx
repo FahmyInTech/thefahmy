@@ -65,13 +65,13 @@ export default function AsciiPortrait({ src = "https://res.cloudinary.com/dgqequ
           // Canvas is wider than image. Crop top/bottom.
           sWidth = img.width;
           sHeight = img.width / canvasAspect;
-          sy = 0;
+          sy = window.innerWidth < 1024 ? 0 : (img.height - sHeight) / 2;
         } else {
           // Canvas is taller than image. Crop sides.
           sHeight = img.height;
           sWidth = img.height * canvasAspect;
           sx = (img.width - sWidth) / 2;
-          sy = 0;
+
         }
 
         offCtx.clearRect(0, 0, cols, rows);
