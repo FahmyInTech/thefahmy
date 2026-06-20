@@ -74,7 +74,7 @@ export default function HeroText() {
 
       {/* Immersive Portrait with Cinematic Vignette Fade -> Ascii Reveal */}
       <div 
-        className="group absolute bottom-0 lg:top-1/2 left-0 right-0 lg:left-auto lg:right-0 lg:-translate-y-1/2 h-[45vh] lg:h-[90vh] lg:w-[50vw] z-0 opacity-60 lg:opacity-100 pointer-events-auto overflow-hidden cursor-crosshair"
+        className="group absolute bottom-0 lg:top-1/2 left-0 right-0 lg:left-auto lg:right-0 lg:-translate-y-1/2 h-[45vh] md:h-[55vh] lg:h-[90vh] lg:w-[50vw] z-0 opacity-60 lg:opacity-100 pointer-events-auto overflow-hidden cursor-crosshair"
         style={{ 
           maskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%)", 
           WebkitMaskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%)" 
@@ -87,7 +87,7 @@ export default function HeroText() {
             src="/images/portrait.jpeg" 
             alt="Fahmy Omara" 
             fill 
-            className="object-cover"
+            className="object-cover object-[center_25%]"
           />
         </div>
 
@@ -102,13 +102,13 @@ export default function HeroText() {
         <FloatingBadge />
       </div> */}
 
-      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 max-w-7xl mx-auto w-full z-10 pointer-events-none mt-8 md:-mt-12 lg:mt-0 relative">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 max-w-7xl mx-auto w-full z-10 pointer-events-none mt-8 lg:mt-0 relative">
 
         <p ref={roleRef} className="font-mono text-xs uppercase tracking-widest text-[#a0a0a0] mb-6 pl-0 lg:pl-1 pointer-events-auto">
           Hello, I'm
         </p>
 
-        <h1 className="font-inter text-[15vw] lg:text-[12rem] font-bold tracking-tighter leading-[0.85] uppercase text-white flex flex-col items-center lg:items-start pointer-events-auto mix-blend-difference relative z-20">
+        <h1 className="font-inter text-[15vw] md:text-[9rem] lg:text-[12rem] font-bold tracking-tighter leading-[0.85] uppercase text-white flex flex-col items-center lg:items-start pointer-events-auto mix-blend-difference relative z-20">
           <span className="overflow-hidden block py-2">
             <span ref={text1Ref} className="block hero-line-inner origin-bottom lg:origin-bottom-left">
               Fahmy
