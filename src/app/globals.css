@@ -56,15 +56,3 @@ html.lenis, html.lenis body {
   clip-path: circle(0% at 100% 0%);
   will-change: clip-path;
 }
-
-.hero-mask {
-  mask-image: linear-gradient(to top, black 60%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
-}
-
-@media (min-width: 1024px) {
-  .hero-mask {
-    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%);
-    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%);
-  }
-}
