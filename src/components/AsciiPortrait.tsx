@@ -71,6 +71,7 @@ export default function AsciiPortrait({ src = "https://res.cloudinary.com/dgqequ
           sHeight = img.height;
           sWidth = img.height * canvasAspect;
           sx = (img.width - sWidth) / 2;
+          sy = 0;
         }
 
         offCtx.clearRect(0, 0, cols, rows);
