@@ -9,15 +9,15 @@ export default function StackedProjects() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={containerRef} className="relative w-full bg-[#050505] py-24 px-4 md:px-16 text-white pb-32 md:pb-64">
+    <section ref={containerRef} className="relative w-full bg-[#050505] py-24 px-4 lg:px-16 text-white pb-32 lg:pb-64">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 relative z-10">
-          <h2 className="font-inter text-5xl md:text-[8rem] font-bold uppercase tracking-tighter leading-[0.85]">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 relative z-10">
+          <h2 className="font-inter text-5xl lg:text-[8rem] font-bold uppercase tracking-tighter leading-[0.85]">
             Selected<br />Work
           </h2>
-          <p className="font-mono text-[#a0a0a0] max-w-sm mt-8 md:mt-0 text-sm md:text-base pr-4">
+          <p className="font-mono text-[#a0a0a0] max-w-sm mt-8 lg:mt-0 text-sm lg:text-base pr-4">
             A curated collection of digital experiences, products, and platforms engineered for maximum impact.
           </p>
         </div>
@@ -31,16 +31,16 @@ export default function StackedProjects() {
             return (
               <div 
                 key={project.id}
-                className="sticky w-full mb-16 md:mb-40 overflow-hidden rounded-[2rem] md:rounded-[3rem] top-[calc(5vh+calc(var(--stack-offset)*20px))] md:top-[calc(8vh+calc(var(--stack-offset)*40px))]"
+                className="sticky w-full mb-16 lg:mb-40 overflow-hidden rounded-[2rem] lg:rounded-[3rem] top-[calc(5vh+calc(var(--stack-offset)*20px))] lg:top-[calc(8vh+calc(var(--stack-offset)*40px))]"
                 style={{ "--stack-offset": index } as React.CSSProperties}
               >
                 {/* The Card Container */}
-                <div className="relative w-full h-auto min-h-[80vh] md:h-[80vh] flex flex-col md:flex-row rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl shadow-black/80 transform origin-top transition-transform group/card bg-[#050505]">
+                <div className="relative w-full h-auto min-h-[80vh] lg:h-[80vh] flex flex-col lg:flex-row rounded-[2rem] lg:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl shadow-black/80 transform origin-top transition-transform group/card bg-[#050505]">
                   
                   {/* =========================================
                       DESKTOP LAYOUT (Hidden on Mobile)
                       ========================================= */}
-                  <div className="hidden md:flex absolute inset-0 w-full h-full z-0 overflow-hidden">
+                  <div className="hidden lg:flex absolute inset-0 w-full h-full z-0 overflow-hidden">
                     {/* Desktop Image */}
                     {project.images.length > 0 ? (
                       <Image 
@@ -61,7 +61,7 @@ export default function StackedProjects() {
                     />
                   </div>
 
-                  <div className="hidden md:flex w-[55%] h-full p-16 flex-col justify-center gap-16 z-20 relative pointer-events-none">
+                  <div className="hidden lg:flex w-[55%] h-full p-16 flex-col justify-center gap-16 z-20 relative pointer-events-none">
                     {/* Top Meta & Text (Desktop) */}
                     <div className="pointer-events-auto flex flex-col gap-8">
                       <div className="flex items-center gap-3">
@@ -102,7 +102,7 @@ export default function StackedProjects() {
                   {/* =========================================
                       MOBILE WOW LAYOUT (Hidden on Desktop)
                       ========================================= */}
-                  <div className="md:hidden flex flex-col w-full h-full relative z-0">
+                  <div className="lg:hidden flex flex-col w-full h-full relative z-0">
                     
                     {/* Ambient Blurred Background for extreme premium feel */}
                     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#0c0c0d]">
