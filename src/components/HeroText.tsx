@@ -74,7 +74,7 @@ export default function HeroText() {
 
       {/* Immersive Portrait with Cinematic Vignette Fade -> Ascii Reveal */}
       <div 
-        className="group absolute bottom-0 lg:top-1/2 left-0 right-0 lg:left-auto lg:right-0 lg:-translate-y-1/2 h-[45vh] lg:h-[90vh] lg:w-[50vw] z-0 opacity-60 lg:opacity-100 pointer-events-auto overflow-hidden cursor-crosshair"
+        className="group absolute bottom-0 lg:top-1/2 left-0 right-0 lg:left-auto lg:right-0 lg:-translate-y-1/2 md:mx-auto lg:m-0 md:w-[60%] lg:w-[50vw] h-[45vh] lg:h-[90vh] z-0 opacity-60 lg:opacity-100 pointer-events-auto overflow-hidden cursor-crosshair"
         style={{ 
           maskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%)", 
           WebkitMaskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 20%, transparent 100%)" 
